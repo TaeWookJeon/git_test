@@ -6,6 +6,5 @@ x = [1, 2, 3, 4]
 
 ## Third written at github
 
-
 ## Fourth written at github
 y = np.log(x)
