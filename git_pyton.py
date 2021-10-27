@@ -8,3 +8,6 @@ x = [1, 2, 3, 4]
 
 ## Fourth written at github
 y = np.log(x)
+
+## fifth written at github master
+hist(x, y)
