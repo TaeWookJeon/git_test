@@ -1,0 +1,15 @@
+git add --> git commit -m --> git push 순으로 마스터 repository로 업로드 복습
+rm -force ~~  : 폴더 제거
+마스터에서 A가 파일 수정을 하고 동시에 로컬에서 B가 수정 했을 때 
+github에서 merge를 시도할 시 <<<<<HEAD   =======   >>>>>LOCAL
+이런식으로 본인이 수정한 것과 다른 사람이 수정한 값을 표기해준다.
+이 경우는 상당히 골치아프며 상호 연락을 해서 값을 정하고 수정해야한다. 그리고 이 경우가 발생하지 않게 조심해야 한다.
+git checkout -b ~~~ : ~~~ 명의 branch를 생성함과 동시에 해당 branch로 스위칭 된다.
+git checkout (존재하는 branch) : 존재하는 branch 로 전환
+git branch : 현재 어떤 branch 목록을 사용중인지 확인
+branch내에 text 파일을 만들면 그 폴더내에 해당 생성 폴더가 확인이 가능하지만 git checkout master로 전환을 하면 branch 내 생성 폴더가 확인이 안되는 모습을 확인 할 수 있다.
+또한 ls 명령어 입력시 해당 branch 에서만 목록이 뜨고 master에서는 확인이 안된다.
+branch_0 을 생성해야 하는데 실수로 braanch_0 을 생성했다. 이 경우엔
+git branch -d braanch_0 를 입력하면 삭제할 수 있다.
+git branch -d ~~~~ : ~~~ branch 삭제
+여기서 git checkout -b 명령은 branch를 생성하는 반면 git branch -d 는 branch를 삭제하는 것을 기억
