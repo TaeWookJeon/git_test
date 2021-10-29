@@ -1,0 +1,302 @@
+jupyter notebook
+단위명 cell
+
+shift + enter 실행하고 셀추가 하거나 내용이 없을 시 셀만 추가
+ctrl + enter 실행만 함
+# 주석은 실행 되지 않음
+
+오타를 내면
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-ebd0d0678a65> in <module>
+      1 print("hello python")
+----> 2 a /= 10
+      3 b = 20
+      4 a + b
+      5 # a - b
+
+NameError: name 'a' is not defined
+
+오류가 나옴
+
+jupyter notebook   은  끄면 커널이 막히고  컨트롤 c 를 누르면 종료됨
+
+
+cls 명령 프롬프트 클리어
+dir 해당 디렉토리의 정보를 확인
+python 파이썬 편집기 진입
+print("hello")  실행시 hello 출력
+exit() 파이썬 편집기 나가기
+
+노트북 파일 확장자 ~.ipynb => jupyter notebook
+일반파이썬 파일 확장자 ~.py => python 파일명
+
+# 키워드 출력
+import keyword
+
+print(keyword.kwlist)
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+print 에 마우스를 올려두고 shift + tab 을 눌러 사용가능한 함수를 확인해야함
+
+#주석처리
+'''주석
+주석
+주석
+'''
+
+#주석처리
+'''주석
+주석
+주석'''
+10 + 20 # test 20 + 50
+30
+
+' 싱글
+" 더블
+
+'test'
+"문자열"
+'''test'''
+"""문자열"""
+
+print("hello python")
+a = 10 
+b = 20
+a + b
+# a - b
+print('a = ', a, 'b = ', b, ' a + b = ', a + b, sep = '...', end = 'k')
+
+hello python
+a = ...10...b = ...20... a + b = ...30k
+
+
+# 키워드 출력
+import keyword
+
+print(keyword.kwlist, 'test')
+
+
+#print() 연습
+# 하나만 출력합니다.
+print("# 하나만 출력합니다")
+print("Hello Python Programming...!")
+print()
+
+# 여러 개를 출력합니다.
+print("# 여러 개를 출력합니다.")
+print(10,20,30,40,50)
+print("Hello", 'Good', 'Morning!!')
+print()
+
+# 아무것도 입력하지 않으면 단순하게 줄바꿈합니다.
+print("# 아무것도 출력하지 않습니다")
+print("---확인 전용선 -----")
+print()
+print()
+print("---확인 전용선 -----")
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+# 하나만 출력합니다
+Hello Python Programming...!
+
+# 여러 개를 출력합니다.
+10 20 30 40 50
+Hello Good Morning!!
+
+# 아무것도 출력하지 않습니다
+---확인 전용선 -----
+
+
+---확인 전용선 -----
+
+
+str 문자열
+int 숫자
+
+
+# \를 이용한 특수문자 출력, \n 은 newline, \t : tab을 의미
+print("\"안녕하세요\" 라고 말했습니다")
+print("안녕하세요\n안녕하세요")
+print("안녕하세요\t안녕하세요")
+
+"안녕하세요" 라고 말했습니다
+안녕하세요
+안녕하세요
+안녕하세요	안녕하세요
+
+# 출력 연습  '\'이용 특수문자 출력
+print("이름\t나이\t지역")
+print("전태욱\t25\t기흥구")
+print("윤아린\t24\t강서구")
+print("구름\t3\t강서구")
+
+이름	나이	지역
+전태욱	25	기흥구
+윤아린	24	강서구
+구름	3	강서구
+
+
+# 여러 라인의 문자열 만들기
+print("동해물과 백두산이\n마르고 닳도록\n하느님이")
+print()
+print('''동해물과 백두산이
+마르고 닳도록
+하느님이''')
+print()
+print("""동해물과 백두산이
+마르고 닳도록
+하느님이""")
+print()
+a_str = """동해물과 백두산이
+마르고 닳도록
+하느님이"""
+print(a_str)
+
+동해물과 백두산이
+마르고 닳도록
+하느님이
+
+동해물과 백두산이
+마르고 닳도록
+하느님이
+
+동해물과 백두산이
+마르고 닳도록
+하느님이
+
+동해물과 백두산이
+마르고 닳도록
+하느님이
+
+# 문자열 연산자 : +, * 
+# 문자열 + 문자열 => 문자열 이어 붙이기
+# 문자열 * 숫자 => 문자열을 숫자만큼 반복
+print("hello" + " world") # hello world
+print("hello" * 2)       # hellohello
+print(2 * "hello")
+
+hello world
+hellohello
+hellohello
+
+
+# 문자열 index 및 slice => str[0] : 0번지 값, str[1:4] -> start:end start는 포함, end는 포함하지 않음
+str = "안녕하세요"
+print(str)
+print(str[0], str[2])
+print(str[-1], str[-5])
+print(str[1:4])
+# print(str[5])   # index error
+print(len(str))   # len(문자열...) 길이를 구하는 함수
+
+안녕하세요
+안 하
+요 안
+녕하세
+5
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# str = "임의로 문자를 넣으세요" str[3: ], str[ :3]
+# str의 길이를 구해서 처음 문자를 -인덱스로 구해서 출력하세요
+
+str = "abcd test cdaf rqeteq gdsaga gagad"
+print(str)
+print(str[0], " : ", str[-len(str)])             
+str_len = len(str) # str의 길이를 구함
+print(str[-str_len])
+
+abcd test cdaf rqeteq gdsaga gagad
+a  :  a
+a
+
+
+# 숫자 : 정수, 실수, 
+# 연산자 : +, -, *, /, //(몫), %(나머지), **(제곱)
+print(" 10 + 5 ", 10 + 5); print(" 10 - 5 ", 10 - 5)
+print(" 10 * 5 ", 10 * 5); print(" 10 / 5 ", 10 / 5)
+print(" 10 // 3 ", 10 // 3); print(" 10 % 3 ", 10 % 3); print(" 10 ** 3", 10 ** 3)
+
+10 + 5  15
+ 10 - 5  5
+ 10 * 5  50
+ 10 / 5  2.0
+ 10 // 3  3
+ 10 % 3  1
+ 10 ** 3 1000
+
+
+# 변수 : 값을 저장하는 공간, 메모리에 방을 만듬, int(값) 정수로 변환, float(), str()
+pi = 3.14159265
+print(int(pi + 2))
+print(pi - 2)
+print(pi * 2)
+
+print("string " + "10")
+print(float(pi + 2))
+print(str(pi + 2))
+str(10) + "abcd"
+
+5
+1.1415926500000002
+6.2831853
+string 10
+5.14159265
+5.14159265
+'10abcd'
+
+
+# 복합 대입 연산자
+num = 100
+num += 10; num +=20
+print(" num = ", num) # num = 130        s
+
+str = "abcd"
+str += "test"
+str *= 2
+print("str : ", str) # abcetestabcdtest
+
+num =  130
+str :  abcdtestabcdtest
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 키보드로부터 입력을 받는 함수 input()
+string = input("문자열 입력 > ")
+print(string)
+# 문자열을 입력받아 문자열의 길이를 출력, 처음 글자와 마지막 글자를 출력 하세요
+# 마지막 글자는 문자열의 길이를 구한 값으로 출력
+str_len = len(string)            
+print("str length : ", str_len, string[0], string[str_len - 1], string[-1])
+
+문자열 입력 > rteaet ngfaf gasgfa
+rteaet ngfaf gasgfa
+str length :  19 r a a
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 숫자 두개를 입력받아 정수형으로 바꾸고
+# 두 수의 사칙연산을 출력하세요
+# 문자열을 입력받아 처음 입력받은 숫자만큼 반복해서 출력 하세요
+num_1 = int(input(" 숫자 입력 : "))
+num_2 = input(" 숫자 입력 : ")
+print(type(num_1), type(num_2)) #str -> int 형으로 변경 int()
+# print(num_1 + num_2); print(num_1 - num_2)  # error = (int + str), (int - str)
+num_2 = int(num_2)
+print(type(num_1), type(num_2))
+# 두 수의 사칙연산 출력 num_1 + num_2, num_1 - num_2, *, /, %, ..
+print(num_1 + num_2); print(num_1 - num_2)
+input_str = input("문자열 입력 : ")
+print(input_str * num_1)
+
+숫자 입력 : 10
+ 숫자 입력 : 20
+<class 'int'> <class 'str'>
+<class 'int'> <class 'int'>
+30
+-10
+문자열 입력 : abcd
+abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+
+
