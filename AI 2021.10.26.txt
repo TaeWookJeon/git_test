@@ -1,0 +1,19 @@
+start-transcript ~ - 기록시작  [확장자명 .py(파이썬) ,  .txt(텍스트) ]
+git --version - 버전 확인
+get-alias -  명령어 확인
+cd ~~ - change directory 폴더 바꾸기
+cd .. - 상위폴더로 나가기
+git config --global user.name "~~~~~~~"   -  git 사용자 이름 설정
+git config --global user.email "~~~~~~~"   -  git 사용자 이메일 설정
+notepad ~~~~    - 텍스트파일 생성
+git status - 파일 상태 확인
+git add ~~ - ~~추가
+git commit -m "~~" - 추가된 것을 기록
+git_test.py 를 간략히 검색 > gi 두글자 정도 입력후 tab  > .\git_test.py
+type ~ - ~저장된 텍스트 가져오기
+git push - 로컬 저장소(local repository)에서 원격 저장소(remote repository)로 업로드
+git fetch - remote repository에서 local repository 로 소스만 내려받아 확인용
+git pull - remote repository에서 local repository로 완전히 내려받기
+branch - 독립적으로 어떤 작업을 진행하기 위한 개념. 각각의 브랜치는 다른 브랜치의 영향을 받지 않기 때문에, 여러 작업을 동시에
+ 진행할 수 있습니다.
+git checkout ~ - ~로 브랜치 전환하기
